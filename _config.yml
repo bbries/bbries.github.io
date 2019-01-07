@@ -1,1 +1,14 @@
+
+title: Ben Briesmeister's Blog
+description: Meditations on the expansion of the Kingdom of God in real life
+
+
+# This only applies to projects yielding code packages.
+# Not applicable here since this is strictly a blog.
+show_downloads: false
+
+# When there's a Google Analytics account configured,
+# we should update this to apply tracking.
+# google_analytics: UA-XXXXX-X
+
 theme: jekyll-theme-cayman
