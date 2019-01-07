@@ -1,0 +1,99 @@
+@import "tweaks";
+
+
+.inline {
+    display: inline;
+}
+
+
+.left, .right {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+    clear: none;
+}
+
+.right {
+    float: right;
+    clear: none;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    a {
+        text-decoration: none;
+    }
+
+    &.nopadding {
+        padding: 0;
+    }
+    &.nomargin {
+        margin: 0;
+    }
+}
+
+p {
+    a {
+        text-decoration: underline;
+    }
+}
+
+div.post.listing {
+
+    @extend .clearfix;
+
+    div.post.item {
+        @extend .clearfix;
+
+        display: block;
+        max-width: 60em;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+
+        div.post.timestamp {
+
+            float: left;
+            clear: left;
+
+            margin: 0;
+            margin-top: 0.25rem;
+            padding: 0.25rem;
+
+            width: 8rem;
+            max-width: 8rem;
+            height: 100%;
+
+            time.timestamp {
+                font-style: italic;
+            }
+
+        }
+
+        h3.post.title {
+            @extend .left;
+
+            max-width: 45em;
+            
+            padding: 0.25em;
+            margin: 0;
+        }
+
+        div.post.excerpt {
+            max-width: 45em; 
+            @extend .right;
+        }
+    }
+
+
+}
