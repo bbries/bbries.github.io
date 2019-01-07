@@ -35,15 +35,15 @@ endif
 
 .PHONY: docker-up
 docker-up:  | docker-build
-ifeq ($(DRAFT), 1)
-	$(eval DRAFT := --drafts --unpublished)
+ifeq ($(DRAFT),1)
+	$(eval DRAFT_ARG := --drafts --unpublished)
 else
-	$(eval DRAFT := )
+	$(eval DRAFT_ARG := )
 endif
 	$(MAKE) docker-clean
 	docker ps  --format="{{.ID}}" -f "name=$(DOCKER_NAME)" -f "status=running" | grep -q '^[0-9a-f]+$$' || \
 		docker run -it --rm -p 4000:4000 --name $(DOCKER_NAME) -v "$(FILEMOUNT)" $(DOCKER_IMAGE) \
-			bundle exec jekyll serve $(DRAFT) --watch --force_polling --incremental --host=0.0.0.0
+			bundle exec jekyll serve $(DRAFT_ARG) --watch --force_polling --incremental --host=0.0.0.0
 
 .PHONY: clean
 clean:
