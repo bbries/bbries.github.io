@@ -90,8 +90,14 @@ div.post.listing {
         }
 
         div.post.excerpt {
+            @extend .left;
             max-width: 45em; 
-            @extend .right;
+
+            margin-left: 2em;
+
+            @include large {
+                margin-left: 5em;
+            }
         }
     }
 
