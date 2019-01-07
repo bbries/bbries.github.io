@@ -20,7 +20,10 @@ permalink: /blog/:year/:categories/:slug
 
 theme: jekyll-theme-cayman
 
-
+author:
+    name: Ben Briesmeister
+    email: ben.briesmeister@gmail.com
+    
 
 exclude:
     - node_modules
