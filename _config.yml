@@ -18,12 +18,15 @@ permalink: /blog/:year/:categories/:slug
 # we should update this to apply tracking.
 # google_analytics: UA-XXXXX-X
 
-theme: jekyll-theme-cayman
-
 author:
     name: Ben Briesmeister
     email: ben.briesmeister@gmail.com
     
+remote_theme: bbries/cayman@master
+
+# NB. we have modified the cayman theme above.
+# theme: jekyll-theme-cayman
+
 
 exclude:
     - node_modules
@@ -31,3 +34,13 @@ exclude:
     - Gemfile
     - Makefile
     - scripts
+
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-remote-theme

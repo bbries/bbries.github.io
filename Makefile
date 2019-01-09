@@ -35,7 +35,7 @@ endif
 
 
 .PHONY: docker-up
-docker-up:  | docker-build
+docker-up:  DOCKER_ENV.local | docker-build
 ifeq ($(DRAFT),1)
 	$(eval DRAFT_ARG := --drafts --unpublished)
 else
@@ -43,8 +43,14 @@ else
 endif
 	$(MAKE) docker-clean
 	docker ps  --format="{{.ID}}" -f "name=$(DOCKER_NAME)" -f "status=running" | grep -q '^[0-9a-f]+$$' || \
-		docker run -it --rm -p 4000:4000 --name $(DOCKER_NAME) -v "$(FILEMOUNT)" $(DOCKER_IMAGE) \
+		docker run -it --env-file $^ --rm -p 4000:4000 --name $(DOCKER_NAME) -v "$(FILEMOUNT)" $(DOCKER_IMAGE) \
 			bundle exec jekyll serve $(DRAFT_ARG) --watch --force_polling --incremental --host=0.0.0.0
+
+.PHONY: docker-run-test
+docker-run-test:  DOCKER_ENV.local
+	docker run -it --env-file $^ --rm --name test-$(DOCKER_NAME) -v "$(FILEMOUNT)" $(DOCKER_IMAGE) \
+		/bin/bash
+
 
 .PHONY: clean
 clean:
