@@ -26,7 +26,8 @@ all: serve
 
 .PHONY: serve
 serve:
-ifeq ($(shell uname -s),Darwin)
+	@echo $(notdir $(shell which docker))
+ifeq ($(notdir $(shell which docker)),docker)
 	$(MAKE) docker-up
 else
 	jekyll serve $(DRAFT) --watch --incremental --host=0.0.0.0
