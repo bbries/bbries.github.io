@@ -16,6 +16,9 @@ CACHE?=./cache
 GEMFILES:=$(shell ls -1 Gemfile*)
 FILEMOUNT:=$(PWD):/srv/jekyll:rw
 
+JEKYLL_CONFIG:=_config.yml,_config_local.yml
+JEKYLL_BUILD_ARGS:=--watch --force_polling --incremental 
+
 ifeq ($(shell uname -s),Darwin)
 FILEMOUNT:=$(FILEMOUNT),delegated
 endif
@@ -44,7 +47,7 @@ endif
 	$(MAKE) docker-clean
 	docker ps  --format="{{.ID}}" -f "name=$(DOCKER_NAME)" -f "status=running" | grep -q '^[0-9a-f]+$$' || \
 		docker run -it --env-file $^ --rm -p 4000:4000 --name $(DOCKER_NAME) -v "$(FILEMOUNT)" $(DOCKER_IMAGE) \
-			bundle exec jekyll serve $(DRAFT_ARG) --watch --force_polling --incremental --host=0.0.0.0
+			bundle exec jekyll serve $(DRAFT_ARG) $(JEKYLL_BUILD_ARGS) --config $(JEKYLL_CONFIG) --host=0.0.0.0
 
 .PHONY: docker-run-test
 docker-run-test:  DOCKER_ENV.local
