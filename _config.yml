@@ -7,9 +7,6 @@ description: Meditations on the expansion of the Kingdom of God in real life
 # Not applicable here since this is strictly a blog.
 show_downloads: false
 
-github:
-    is_project_page: false
-
 # specifies the URL format for generated blog URLs
 permalink: /blog/:year/:categories/:slug
 
