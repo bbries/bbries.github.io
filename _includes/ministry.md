@@ -2,7 +2,7 @@
 _Soon this site will include my blog, contact, newsletter and related features as well. Please check back soon!_
 
 # Ministry Overview
-####Awakening the Church to love the World
+#### Awakening the Church to love the World
 ## Core Values
 >*Core values are the attitudes of our hearts that determine how we make decisions both proactively and reactively to the circumstances around us.*
 
