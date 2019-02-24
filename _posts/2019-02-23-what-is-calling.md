@@ -19,7 +19,7 @@ summary: |
 **Due to the _unique_** way that God calls each of us into the life He has prepared for us, I do not have a dramatic "Damascus Road" [(Acts 9:1-19)][Acts 9:1-19] moment to share. Rather, the Lord calling me has been more like Abraham's story: Abraham encountered the Lord in many ways and many times, yielding each time to a new way that the Lord wished to work in his life. 
 
 
-##What is "Calling?"
+## What is "Calling?"
 >*Before I share my own experience, I think we should take this post to explore the concept of a calling from a biblical perspective. This will be the most theological and complex post in the series.*
 
 --- 
@@ -42,7 +42,8 @@ Do you see the pattern here? The world teaches us that we are who we are because
 	
 	"... Created in Christ Jesus..." is perhaps the most important part of this verse. We cannot forget who it is that created us, indeed we must be told directly by Him who we *are*, otherwise we will walk through life aimlessly believing we are who other people say we are, and doing only what other people say we can do. We are created by God to do the works of God, yet we cannot do the works of God without knowing God himself! Relationship with God is through Christ alone, and we are "created in Christ Jesus" when we receive the gift of God. That gift includes: freedom and forgiveness from the sinful passions that controlled us, a holy and blamelss life, relationship with Him, the Holy Spirit, power, authority, inheritance, and indeed "every spiritual blessing." [(Eph 1:1-14)][Eph 1:1-14]  [(Eph 2:1-9)][Eph 2:1-9]
 	
-##What am I called to do?
+## What am I called to do?
+
 We are first called to Christ and eternal life in Him, that is, to **know the Father**. [(John 17:3)][John 17:3] To know what we were created to *do*, we must begin by asking God who we are created to *be*. Practically, this means making time in our lives to *be* with Him. Reading from the bible is one of the most accessible ways for us to come to know His heart and character. When we know His heart it becomes easier to trust Him, and it is always easier to believe the words of somebody we trust than somebody we don't know anything about. Worship and prayer are great places for us to then, knowing we can trust Him, seek to hear His voice over our lives, and ask Him to reveal to us personally, not just through the bible but through the reality of our lives, how much He loves us. From this place of knowing who He is, who He says we are, and how He loves us as we are, we begin to live in the identity of who we *are*. Then, first knowing who we *are*, He begins to show us what to *do*.
 
 ---
