@@ -32,7 +32,8 @@ A prevalent belief in the western church is that the calling of God on our lives
 * **The world** says I *am* righteous because I *do* rightly, **but God** says I *do* rightly because I *am* righteous.
 
 Do you see the pattern here? The world teaches us that we are who we are because of what we do, but God says that we do what we do because of who we are.
-####Let's see what His word says:
+
+#### Let's see what His word says:
 *There are many verses and stories that approach this topic, I chose the single best verse I believe there is on the subject. If you would like to discuss others, feel free to contact me personally.*
 	 
 * *For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.* [(Eph 2:10)][Eph 2:10]
